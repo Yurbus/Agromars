@@ -66,16 +66,17 @@ if (iconMenu) {
 
 
 // -------- При скроле поднимаем меню вверх -----------------------------------------
-const menu = document.querySelector('.header');
+// const menu = document.querySelector('.header');
 
-// Функция, которая срабатывает при прокрутке
-window.onscroll = function () {
-  if (window.scrollY > 50) { // Если прокрутка больше 50px
-    menu.style.top = '0px'; // Скрыть меню
-  } else {
-    menu.style.top = '24px'; // Показать меню
-  }
-};
+// // Функция, которая срабатывает при прокрутке
+// window.onscroll = function () {
+//   if (window.scrollY > 50) { // Если прокрутка больше 50px
+//     menu.style.top = '0px'; // Скрыть меню
+//     } else {
+//         menu.style.top = '24px'; // Показать меню
+//         menu.style.background = '#fff'; // Показать меню
+//     }
+// };
 
 // -------- Прокрутка при клике -----------------------------------------
 
