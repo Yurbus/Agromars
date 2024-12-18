@@ -352,7 +352,7 @@ body._touch .menu__list > li._active .menu__arrow {
 .h2__title {
   display: inline-block;
   font-weight: 600;
-  font-size: clamp(24px, 3vw, 32px);
+  font-size: clamp(16px, 3vw, 32px);
   line-height: 1.1;
   color: var(--black-color);
   padding: 16px 32px;
@@ -407,7 +407,7 @@ body._touch .menu__list > li._active .menu__arrow {
   .hero__text {
     margin: 15px 0;
     span {
-      font-size: clamp(24px, 3vw, 32px);;
+      font-size: clamp(14px, 3vw, 32px);;
       font-weight: 300;
       line-height: 1.2;
       text-transform: uppercase;
@@ -455,7 +455,7 @@ body._touch .menu__list > li._active .menu__arrow {
   .company__text {
     span {
       display: inline-block;
-      font-size: clamp(18px, 4vw, 32px);
+      font-size: clamp(14px, 4vw, 32px);
       font-weight: 500;
       line-height: 128%; /* 41.02px/32 */
       text-transform: uppercase;
@@ -571,21 +571,130 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 
+/*---------------- Section послуги ---------------------------------*/
+.mySwiper2 {
+  .swiper-wrapper {
+    margin-top: 44px;
+    .swiper-slide {
+      .slide__item {
+        img {
+  
+        }
+        .item__title {
+          font-size: 32px;
+          font-weight: 500;
+          line-height: 100%; /* 24px/24 */
+          transform: translateY(-120px);
+          padding: 18px 32px;
+          color: var(--white-color);
+          height: 108px;
+          display: flex;
+          align-items: flex-end;
+        }
+      }
+    }
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    top: 94% !important;
+    width: 50px;
+    height: 50px;
+    z-index: 20;
+  }
+  .swiper-button-next:after {
+    background: url('../img/next.svg') no-repeat !important;
+    font-size: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-button-prev:after {
+    background: url('../img/prew.svg') no-repeat !important;
+    font-size: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-button-next {
+    right: 40%;
+  }
+  .swiper-button-prev {
+    left: 40%;
+  }
+  .swiper-horizontal>.swiper-pagination-bullets, 
+  .swiper-pagination-bullets.swiper-pagination-horizontal, 
+  .swiper-pagination-custom, 
+  .swiper-pagination-fraction {
+    bottom: 4%;
+  }
+  .swiper-pagination-bullet {
+    background: #DEDEDE !important;
+    opacity: 1 !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: #DF9226 !important;
+    width: 32px;
+    height: 8px;
+    border-radius: 8px;
+  }
+
+}
+
 /*---------------- Section  ---------------------------------*/
+.mySwiper3 {
+  .swiper-wrapper {
+    margin-top: 44px;
+    .swiper-slide {
+      height: 320px;
+      .slide__item {
+      }
+    }
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    top: 94% !important;
+    width: 50px;
+    height: 50px;
+    z-index: 20;
+  }
+  .swiper-button-next:after {
+    background: url('../img/next.svg') no-repeat !important;
+    font-size: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-button-prev:after {
+    background: url('../img/prew.svg') no-repeat !important;
+    font-size: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-button-next {
+    right: 40%;
+  }
+  .swiper-button-prev {
+    left: 40%;
+  }
+  .swiper-horizontal>.swiper-pagination-bullets, 
+  .swiper-pagination-bullets.swiper-pagination-horizontal, 
+  .swiper-pagination-custom, 
+  .swiper-pagination-fraction {
+    bottom: 4%;
+  }
+  .swiper-pagination-bullet {
+    background: #DEDEDE !important;
+    opacity: 1 !important;
+  }
 
+  .swiper-pagination-bullet-active {
+    background: #DF9226 !important;
+    width: 32px;
+    height: 8px;
+    border-radius: 8px;
+  }
 
-/*---------------- Section  ---------------------------------*/
-
-
-/*---------------- Section  ---------------------------------*/
-
-/*---------------- Section  ---------------------------------*/
-
-/*---------------- Section  ---------------------------------*/
-
-
-
-
+}
 
 
 
@@ -742,6 +851,31 @@ body._touch .menu__list > li._active .menu__arrow {
   .mySwiper .swiper-pagination-fraction {
     bottom: 5%;
   }
+  .mySwiper2 .swiper-button-prev {
+    left: 28%;
+  }
+  .mySwiper2 .swiper-button-next {
+    right: 28%;
+  }
+  .mySwiper2 .swiper-horizontal > .swiper-pagination-bullets, 
+  .mySwiper2 .swiper-pagination-bullets.swiper-pagination-horizontal, 
+  .mySwiper2 .swiper-pagination-custom, 
+  .mySwiper2 .swiper-pagination-fraction {
+    bottom: 5%;
+  }
+  .mySwiper3 .swiper-button-prev {
+    left: 28%;
+  }
+  .mySwiper3 .swiper-button-next {
+    right: 28%;
+  }
+  .mySwiper3 .swiper-horizontal > .swiper-pagination-bullets, 
+  .mySwiper3 .swiper-pagination-bullets.swiper-pagination-horizontal, 
+  .mySwiper3 .swiper-pagination-custom, 
+  .mySwiper3 .swiper-pagination-fraction {
+    bottom: 5%;
+  }
+
 
   .footer__body {
     display: grid;
@@ -774,7 +908,7 @@ body._touch .menu__list > li._active .menu__arrow {
 
 @media (max-width: 767.98px) {
   .header__container {
-    padding: 0;
+    padding: 0 0 0 20px;
   }
   .header__button-mobile {
     display: block;
@@ -814,7 +948,7 @@ body._touch .menu__list > li._active .menu__arrow {
     width: 18px;
     height: 12px;
     right: 18px;
-    top: 41%;
+    top: 40%;
     cursor: pointer;
   }
   .menu__icon_bg {
@@ -1020,30 +1154,65 @@ body._touch .menu__list > li._active .menu__arrow {
   .mySwiper .swiper-pagination-fraction {
     bottom: 5%;
   }
+  .mySwiper2 .swiper-button-prev {
+    left: 5%;
+  }
+  .mySwiper2 .swiper-button-next {
+    right: 5%;
+  }
+  .mySwiper2 .swiper-horizontal > .swiper-pagination-bullets, 
+  .mySwiper2 .swiper-pagination-bullets.swiper-pagination-horizontal, 
+  .mySwiper2 .swiper-pagination-custom, 
+  .mySwiper2 .swiper-pagination-fraction {
+    bottom: 5%;
+  }
+  .mySwiper3 .swiper-button-prev {
+    left: 5%;
+  }
+  .mySwiper3 .swiper-button-next {
+    right: 5%;
+  }
+  .mySwiper3 .swiper-horizontal > .swiper-pagination-bullets, 
+  .mySwiper3 .swiper-pagination-bullets.swiper-pagination-horizontal, 
+  .mySwiper3 .swiper-pagination-custom, 
+  .mySwiper3 .swiper-pagination-fraction {
+    bottom: 5%;
+  }
 }
 
 
 @media (max-width: 479.98px) {
+  .header__body {
+    padding: 14px 0;
+  }
+  .header__logo {
+    max-width: 120px;
+  }
   .hero__content {
-    padding: 64% 0 0;
-    .hero__btns-list {
-      display: flex;
-      flex-direction: column;
-      li {
-        margin-bottom: 20px;
-        margin-right: 0;
-        a {
-          display: flex;
-          justify-content: center;
-          width: 100%;
-        }
+    padding: 40% 18px 0;
+    text-align: center;
+    .hero__text {
+      margin: 5px 0;
+      p {
+        text-align: left;
+      }
+    }
+    .hero__btns {
+      a {
+        display: flex;
+        justify-content: center;
+        width: 100%;
       }
     }
   }
-  .join__body {
-    .join__gallery {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
+  .company__body .company__text p {
+    font-size: 13px;
+    padding-left: 0;
+  }
+  .top__text {
+    margin-top: 24px;
+    .top__text-btn {
+      display: none;
     }
   }
   .footer-widget {
@@ -1074,23 +1243,6 @@ body._touch .menu__list > li._active .menu__arrow {
     line-height: 120%;
     font-weight: 600;
   }
-  .stats-block {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-  }
-
-  .swiper3 {
-    width: 100%;
-    height: 699px;
-}
-  // .swiper-css-mode.swiper-horizontal > .swiper-wrapper {
-  //   height: 600px !important;
-  // }
-
-}
-
-@media (max-width: 374.98px) {
 
 }
 
