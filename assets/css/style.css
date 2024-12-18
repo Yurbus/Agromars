@@ -352,6 +352,13 @@ body._touch .menu__list > li._active .menu__arrow {
   color: var(--black-color);
 }
 
+.red__text {
+  font-weight: 450;
+  font-size: clamp(16px, 3vw, 18px);
+  line-height: 1.1;
+  color: rgb(255, 0, 0);
+}
+
 /*=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/==/=*/
 /*---------------- MAIN PAGE STYLE -------------------------------------------------------------*/
 /*=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/==/=*/
@@ -1106,6 +1113,9 @@ body._touch .menu__list > li._active .menu__arrow {
     text-align: center;
     display: block;
   }
+  .footer-widget .footer-widget-title:first-child .footer-logo img {
+    max-width: 160px;
+  }
   .footer-widget .footer-widget-images {
     display: flex;
     align-items: center;
@@ -1114,9 +1124,6 @@ body._touch .menu__list > li._active .menu__arrow {
   .footer-widget .footer-widget-images .social-images {
     display: flex;
     justify-content: center;
-  }
-  .footer__copyright {
-    margin-top: -135px;
   }
 }
 @media (max-width: 414.98px) {

@@ -72,3 +72,26 @@ var swiper = new Swiper(".mySwiper3", {
         },
     },
 });
+
+var swiper = new Swiper(".mySwiper4", {
+    slidesPerView: 1.2,
+    spaceBetween: 10,
+    autoPlay: true,
+    // navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    // },
+    // pagination: {
+    //     el: ".swiper-pagination",
+    // },
+    mousewheel: true,
+    keyboard: true,
+    breakpoints: {
+        580: {
+            slidesPerView: 2,
+        },
+        960: {
+            slidesPerView: 4.2,
+        },
+    },
+});

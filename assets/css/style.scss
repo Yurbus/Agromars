@@ -366,7 +366,12 @@ body._touch .menu__list > li._active .menu__arrow {
   text-transform: uppercase;
   color: var(--black-color);
 }
-
+.red__text {
+  font-weight: 450;
+  font-size: clamp(16px, 3vw, 18px);
+  line-height: 1.1;
+  color: rgba(255, 0, 0, 1);
+}
 
 
 /*=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/==/=*/
@@ -1220,6 +1225,9 @@ body._touch .menu__list > li._active .menu__arrow {
       .footer-logo {
         text-align: center;
         display: block;
+        img {
+          max-width: 160px;
+        }
       }
     }
     .footer-widget-images {
@@ -1232,9 +1240,6 @@ body._touch .menu__list > li._active .menu__arrow {
       }
     }
   } 
-  .footer__copyright {
-    margin-top: -135px;
-}
 }
 
 @media (max-width: 414.98px) {
