@@ -72,7 +72,8 @@
   line-height: 16px;
   margin-bottom: 12px;
 }
-.contact__body .contact__item .contact__list li span {
+.contact__body .contact__item .contact__list li span,
+.contact__body .contact__item .contact__list li a {
   font-size: 24px;
   font-weight: 500;
   line-height: 24px;

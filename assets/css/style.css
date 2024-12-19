@@ -826,7 +826,7 @@ body._touch .menu__list > li._active .menu__arrow {
   }
   .header__button-mobile {
     display: block;
-    margin-top: 100px;
+    margin: 100px 0 30px;
   }
   .header__button {
     display: none;
