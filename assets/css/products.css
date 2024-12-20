@@ -238,7 +238,7 @@
 }
 
 .product-title {
-  font-size: 24px;
+  font-size: clamp(20px, 4vw, 24px);
   font-weight: 450;
   line-height: 120%;
   margin: 10px 0;
@@ -246,7 +246,7 @@
 }
 
 .product-price {
-  font-size: 24px;
+  font-size: clamp(20px, 4vw, 24px);
   font-weight: 700;
   line-height: 120%;
   color: var(--black-color);
@@ -333,7 +333,7 @@
 }
 
 .product-title {
-  font-size: 24px;
+  font-size: clamp(20px, 4vw, 24px);
   font-weight: bold;
   color: var(--black-color);
 }
@@ -368,7 +368,7 @@
 }
 
 .btn-primary:hover {
-  background-color: #b99100;
+  background-color: var(--pr-hover-color);
 }
 
 .btn-secondary {
@@ -420,6 +420,10 @@
     background-color: #fff;
     margin-top: 35px;
   }
+  .tires_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media (max-width: 767.98px) {
   .search__body .search-form {
@@ -436,6 +440,10 @@
   .product_wrapper .entry-card-last {
     height: 445px;
   }
+  .tires_wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (max-width: 559.98px) {
   .products__hero .hero__content {
@@ -451,5 +459,9 @@
   .search__body .filter-group {
     flex-direction: column;
     display: flex;
+  }
+  .tires_wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }/*# sourceMappingURL=products.css.map */
