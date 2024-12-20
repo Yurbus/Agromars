@@ -64,6 +64,33 @@ if (iconMenu) {
 // }
 
 
+// -------- Выпадающее окно  -----------------------------------------
+document.addEventListener("DOMContentLoaded", () => {
+    const vylitToggle = document.getElementById("toggle-vylit");
+    const vylitDropdown = document.getElementById("dropdown-vylit");
+    const widthToggle = document.getElementById("toggle-width");
+    const widthDropdown = document.getElementById("dropdown-width");
+
+    vylitToggle.addEventListener("click", (event) => {
+        event.preventDefault();
+        vylitDropdown.classList.toggle("active");
+        widthDropdown.classList.remove("active"); // Закрыть другое окно
+    });
+
+    widthToggle.addEventListener("click", (event) => {
+        event.preventDefault();
+        widthDropdown.classList.toggle("active");
+        vylitDropdown.classList.remove("active"); // Закрыть другое окно
+    });
+
+    // Закрытие окна при клике вне его области
+    document.addEventListener("click", (event) => {
+        if (!event.target.closest(".btn") && !event.target.closest(".dropdown")) {
+            vylitDropdown.classList.remove("active");
+            widthDropdown.classList.remove("active");
+        }
+    });
+});
 
 // -------- При скроле поднимаем меню вверх -----------------------------------------
 // const menu = document.querySelector('.header');
