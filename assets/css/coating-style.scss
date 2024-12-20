@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  --primary-color: #B98500;
+  --pr-hover-color: #ca9101;
+  --footer-bg: #F1F1F1;
+  --futura-font: "Futura PT", sans-serif;
+}
+
+
+/*---------------- Section hero ---------------------------------*/
+.powder__hero {
+  height: 600px;
+  .hero__body {
+    position: relative;
+    margin-top: 106px;
+  }
+  .hero__bg {
+    img {
+      object-fit: cover;
+      height: 600px;
+      border-radius: 24px;
+    }
+  }
+  .hero__content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 210px 0 0 50px;
+    color: var(--white-color);
+    .hero__title {
+      font-size: clamp(32px, 3vw, 64px);
+      text-transform: uppercase;
+      font-weight: 600;
+      line-height: 1.3;
+      letter-spacing: 0.14em;
+      text-align: left;
+    }
+    .hero__text {
+      margin: 0;
+      p {
+        max-width: 750px;
+      }
+    }
+  }
+}
+
+/*---------------- Section technology ---------------------------------*/
+.technology {
+  padding: 90px 0 64px;
+}
+.technology__body {
+  display: grid;
+  // grid-template-columns: 480px 1fr;
+  grid-template-columns: minmax(300px, 480px) 1fr;
+  gap: 30px;
+  .technology__title-wrapper {
+    .technology__title {
+    }
+  }
+  .technology__text {
+    span {
+      display: inline-block;
+      font-size: clamp(14px, 4vw, 32px);
+      font-weight: 500;
+      line-height: 128%; /* 41.02px/32 */
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    p {
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 450;
+      line-height: 128%; /* 20.51px/16 */
+    }
+    h3 {
+      font-size: clamp(16px, 4vw, 20px);
+      font-weight: 600;
+      line-height: 128.2%; /* 25.64px/20 */
+      margin: 12px 0;
+    }
+    .technology__list {
+      li {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 128%; /* 20.51px/16 */
+        list-style: disc;
+        margin-left: 30px;
+      }
+    }
+  }
+}
+
+/*---------------- Section preparation ---------------------------------*/
+.preparation {
+  padding: 90px 0 64px;
+}
+.preparation__body {
+  display: grid;
+  // grid-template-columns: 480px 1fr;
+  grid-template-columns: minmax(300px, 480px) 1fr;
+  gap: 30px;
+  .preparation__title-wrapper {
+    .preparation__title {
+    }
+  }
+  .preparation__text {
+    span {
+      display: inline-block;
+      font-size: clamp(14px, 4vw, 32px);
+      font-weight: 500;
+      line-height: 128%; /* 41.02px/32 */
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    p {
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 450;
+      line-height: 128%; /* 20.51px/16 */
+    }
+  }  
+}
+.preparation__items-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px 10px;
+  margin-top: 60px;
+  .preparation__item {
+    padding: 32px 18px;
+    background: linear-gradient(180deg, #F1F1F1 0%, #FFFFFF 100%);
+    border-radius: 24px;
+    min-height: 194px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .item__title {
+      font-size: clamp(20px, 3vw, 24px);;
+      font-weight: 600;
+      line-height: 128%; /* 30.77px/24px */
+    }
+    p {
+      font-size: clamp(14px, 3vw, 16px);;
+      font-weight: 400;
+      line-height: 128%; /* 30.77px/24px */
+    }
+  }
+  .preparation__item-first {
+    background: linear-gradient(180deg, #FFC739 0%, #FFE59F 100%);
+    .item__title {
+      font-size: clamp(20px, 3vw, 32px);;
+      font-weight: 600;
+      line-height: 128%; /* 30.77px/24px */
+    }
+  }
+  .preparation__item-last {
+    background: linear-gradient(180deg, #39FF41 0%, #9FFFAE 100%);
+    .item__title {
+      font-size: clamp(20px, 3vw, 32px);;
+      font-weight: 600;
+      line-height: 128%; /* 30.77px/24px */
+    }
+  }
+}
+
+
+
+
+
+/*=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/==/=*/
+/*================= АДАПТАЦІЯ СТИЛІВ ДЛЯ МОБІЛЬНИХ ПРИСТРОЇВ ===================================*/ 
+/*=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/*/
+@media (min-width: 1710px) {
+
+}
+
+@media (max-width: 960.98px) {
+  .technology__body {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .preparation__body {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .preparation__items-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 559.98px) {
+  .about__hero .hero__content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 210px 18px 0 18px;
+    color: var(--white-color);
+  }
+  .preparation__items-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
