@@ -62,7 +62,7 @@
   margin-top: 60px;
 }
 .product_wrapper .entry-card {
-  padding: 12px;
+  padding: 8px 12px;
   border-radius: 24px;
   background: rgb(242, 242, 242);
 }
@@ -406,7 +406,7 @@
 }
 .product-measurement .measurement-buttons {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 10px;
   align-items: flex-start;
 }
@@ -439,7 +439,7 @@
 }
 .product-measurement .dropdown h4 {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 12px;
 }
 .product-measurement .dropdown p {
@@ -451,6 +451,15 @@
 .product-measurement .dropdown.active {
   display: block;
   margin-top: 40px;
+}
+
+.video__item {
+  width: 100%;
+  border-radius: 18px;
+}
+
+.company__body .assopt__text p {
+  padding-left: 0;
 }
 
 /*=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/==/=*/
@@ -502,10 +511,6 @@
     flex-direction: column;
     padding: 210px 18px 0 18px;
     color: var(--white-color);
-  }
-  .product-measurement .measurement-buttons {
-    display: grid;
-    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 479.98px) {

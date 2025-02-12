@@ -42,9 +42,7 @@
     }
     .hero__text {
       margin: 0;
-      p {
-        max-width: 750px;
-      }
+
     }
   }
 }
@@ -205,23 +203,81 @@
   gap: 10px;
   margin-top: 60px;
   .team__item {
-    padding: 18px;
+    position: relative;
+    padding: 32px 18px;
     background: linear-gradient(180deg, #F1F1F1 0%, #FFFFFF 100%);
     border-radius: 24px;
-    height: 194px;
+    height: 230px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    .item__icon {
+      position: absolute;
+      left: 14px;
+      top: 28px;
+      width: 72px;
+      height: 72px;
+    }
     .item__title {
       font-size: clamp(18px, 3vw, 24px);;
       font-weight: 600;
       line-height: 128%; /* 30.77px/24px */
-      text-align: center;
+      margin-top: 76px;
     }
   }
-  .team__item-center {
+  .team__item-1 {
+    .item__icon-1 {
+      background: url('../img/about-icons/time_atack_duotone_line.svg') no-repeat;
+    }
+  }
+  .team__item-2 {
+    .item__icon-2 {
+      background: url('../img/about-icons/mdi_wheel.svg') no-repeat;
+    }
+  }
+  .team__item-3 {
+    .item__icon-3 {
+      background: url('../img/about-icons/mage_box-3d-check-fill.svg') no-repeat;
+    }
+  }
+  .team__item-4 {
+    .item__icon-4 {
+      background: url('../img/about-icons/twemoji_wheel.svg') no-repeat;
+    }
+  }
+  .team__item-5 {
+    .item__icon-5 {
+      background: url('../img/about-icons/pipe_fill.svg') no-repeat;
+    }
+  }
+  .team__item-6 {
+    .item__icon-6 {
+      background: url('../img/about-icons/material-apps-wheel.svg') no-repeat;
+    }
+  }
+
+
+  .team__item:hover {
     background: linear-gradient(180deg, #FFC739 0%, #FFE59F 100%);
   }
+  .team__item-1:hover .item__icon-1 {
+    background: url('../img/about-icons/time_atack_duotone_line-hover.svg') no-repeat;
+  }
+  .team__item-2:hover .item__icon-2 {
+    background: url('../img/about-icons/mdi_wheel-hover.svg') no-repeat;
+  }
+  .team__item-3:hover .item__icon-3 {
+    background: url('../img/about-icons/mage_box-3d-check-fill-hover.svg') no-repeat;
+  }
+  .team__item-4:hover .item__icon-4 {
+    background: url('../img/about-icons/twemoji_wheel-hover.svg') no-repeat;
+  }
+  .team__item-5:hover .item__icon-5 {
+    background: url('../img/about-icons/pipe_fill-hover.svg') no-repeat;
+  }
+  .team__item-6:hover .item__icon-6 {
+    background: url('../img/about-icons/material-apps-wheel-hover.svg') no-repeat;
+  }
+
 }
 
 

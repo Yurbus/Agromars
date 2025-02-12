@@ -366,12 +366,12 @@ body._touch .menu__list > li._active .menu__arrow {
   text-transform: uppercase;
   color: var(--black-color);
 }
-.red__text {
-  font-weight: 450;
-  font-size: clamp(16px, 3vw, 18px);
-  line-height: 1.1;
-  color: rgba(255, 0, 0, 1);
-}
+// .red__text {
+//   font-weight: 450;
+//   font-size: clamp(16px, 3vw, 24px);
+//   line-height: 128%; /* 30.77px/24 */
+//   color: rgb(255, 255, 255);
+// }
 
 
 /*=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/=/==/=*/
@@ -420,11 +420,12 @@ body._touch .menu__list > li._active .menu__arrow {
     }
     p {
       font-family: var(--inter-font);
-      font-size: clamp(14px, 3vw, 18px);
       font-weight: 450;
-      line-height: 1.2;
-      max-width: 750px;
+      font-size: clamp(16px, 3vw, 24px);
+      line-height: 128%; /* 30.77px/24 */
+      color: rgb(255, 255, 255);
       padding: 24px 0;
+      max-width: 750px;
     }
   }
   .hero__btns-list {
@@ -658,7 +659,7 @@ body._touch .menu__list > li._active .menu__arrow {
   .swiper-button-next,
   .swiper-button-prev {
     position: absolute;
-    top: 94% !important;
+    top: 93% !important;
     width: 50px;
     height: 50px;
     z-index: 20;
@@ -1181,7 +1182,7 @@ body._touch .menu__list > li._active .menu__arrow {
   .mySwiper3 .swiper-pagination-bullets.swiper-pagination-horizontal, 
   .mySwiper3 .swiper-pagination-custom, 
   .mySwiper3 .swiper-pagination-fraction {
-    bottom: 5%;
+    bottom: 4%;
   }
 }
 
