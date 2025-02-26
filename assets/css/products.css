@@ -93,9 +93,13 @@
 .product_wrapper .entry-card a.boundless-image img {
   border-radius: 16px;
 }
+.product_wrapper .entry-card-last:nth-child(3n+1) {
+  grid-column: span 3;
+  height: 440px;
+}
 .product_wrapper .entry-card-last {
   background: rgb(89, 113, 30);
-  padding: 32px 24px;
+  padding: 32px 24px 46px;
   color: var(--white-color);
 }
 .product_wrapper .entry-card-last .card-content-wrap {
@@ -137,6 +141,12 @@
   background: var(--pr-hover-color);
 }
 
+@media screen and (min-width: 640px) {
+  .entry-card-last:nth-child(8),
+  .entry-card-last:nth-child(11) {
+    grid-column: span 2;
+  }
+}
 /*---------------- Section tires ---------------------------------*/
 .search {
   margin: 50px 0;

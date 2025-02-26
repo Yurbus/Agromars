@@ -99,9 +99,13 @@
       }
     }
   }
+  .entry-card-last:nth-child(3n + 1) {
+    grid-column: span 3;
+    height: 440px;
+  }
   .entry-card-last {
     background: rgba(89, 113, 30, 1);
-    padding: 32px 24px;
+    padding: 32px 24px 46px;
     color: var(--white-color);
     .card-content-wrap {
       display: flex;
@@ -147,6 +151,13 @@
     }
   }
 
+}
+
+@media screen and (min-width:640px) {
+  .entry-card-last:nth-child(8),
+  .entry-card-last:nth-child(11) {
+    grid-column: span 2;
+  }
 }
 
 /*---------------- Section tires ---------------------------------*/
