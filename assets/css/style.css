@@ -89,7 +89,7 @@ body._lock {
   color: var(--white-color);
   line-height: 100%;
   padding: 16px 51px;
-  border-radius: 8px;
+  border-radius: 30px;
   background: var(--primary-color);
   color: var(--white-color);
   transition: all 0.2s ease 0s;
